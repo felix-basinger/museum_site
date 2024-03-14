@@ -100,7 +100,7 @@ body {
 
 .dropdown-content a:hover {
     background-color: #4A4A4A;
-    color: black;
+    color: #fff;
 }
 
 .show {
