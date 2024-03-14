@@ -354,6 +354,15 @@
 }
 
 @media (max-width: 1000px){
+
+    .wrapper {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: #D0CECC;
+      }
+
     .kazaki {
         display: block;
         width: 800px;
@@ -1469,7 +1478,7 @@
 
     .figures-content {
         padding-left: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
         max-width: 500px;
         text-align: center;
       }
