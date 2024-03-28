@@ -522,8 +522,7 @@ body {
 
 .footer-content {
   padding: 30px 0px;
-  /* display: grid;
-  align-items: center; */
+  padding-left: 20px;
   margin: 0px auto;
   width: 330px;
   font-size: 20px;
