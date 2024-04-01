@@ -23,6 +23,8 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .nav-list {
@@ -173,6 +175,7 @@ body {
   width: 500px;
   height: 600px;
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.9);
+  object-fit: cover;
 }
 
 .content {
@@ -249,6 +252,7 @@ body {
 .woman {
   width: 610px;
   height: 400px;
+  object-fit: cover;
 }
 
 .museum-head-text {
@@ -326,6 +330,7 @@ body {
 .man {
   width: 610px;
   height: 400px;
+  object-fit: cover;
 }
 
 .third-grey-wrapper {
@@ -351,12 +356,13 @@ body {
 .singer-img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .title {
   position: absolute;
-  top: 70px;
-  left: 70px;
+  bottom: 40px;
+  left: 30px;
   max-width: 700px;
   color: #fff;
   font-weight: 400;
@@ -547,4 +553,79 @@ body {
 .icons img {
   width: 40px;
   height: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------GALLERY--------------------------*/
+
+.gallery-container .gal-img-container{
+  padding-top: 85px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.gallery-container .gal-img-container .img-gallery {
+  width: 520px;
+  height: 330px;
+  overflow: hidden;
+}
+
+.gallery-container .gal-img-container .img-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gallery-container .gal-img-container .img-gallery:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-container .pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+   
+}
+
+.gallery-container .pop-up img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 600px;
+  z-index: 2;
+}
+
+.gallery-container .pop-up span {
+  position: fixed;
+  top: 65px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;
 }
