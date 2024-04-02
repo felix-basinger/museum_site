@@ -555,17 +555,9 @@ body {
   height: 40px;
 }
 
-
-
-
-
-
-
-
-
 /*------------------------GALLERY--------------------------*/
 
-.gallery-container .gal-img-container{
+.gallery-container .gal-img-container {
   padding-top: 85px;
   padding-bottom: 40px;
   display: flex;
@@ -601,7 +593,6 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: none;
-   
 }
 
 .gallery-container .pop-up img {
@@ -612,6 +603,7 @@ body {
   width: 900px;
   height: 600px;
   z-index: 2;
+  object-fit: cover;
 }
 
 .gallery-container .pop-up span {
